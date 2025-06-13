@@ -1,4 +1,12 @@
 {{ define "main" }}
+  {{ if .IsHome }}
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  {{ else }}
+    <div class="back-nav">
+      <a href="../" class="back-link">« Back</a>
+    </div>
+  {{ end }}
+
   <h1>{{ .Title }}</h1>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   {{ .Content }}

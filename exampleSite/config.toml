@@ -27,6 +27,16 @@ email = "kiennt2609@gmail.com"
     endLevel = 4
     ordered = true
 
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
 [build]
   writeStats = true
 
