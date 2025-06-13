@@ -3,7 +3,7 @@
 }
 
 ::selection {
-  background: #ddd;
+  background: #e5decf;
   color: #000;
 }
 
@@ -28,7 +28,7 @@ html {
 
 body {
   font: 1em / var(--lh) monospace;
-  background: #eee;
+  background: #f6eee3;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -45,16 +45,6 @@ a {
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-
-/*
-a.inline {
-  margin: 0;
-  padding: 0;
-} */
-
-/* a:active i {
-  border: none;
-} */
 
 p,
 pre {
