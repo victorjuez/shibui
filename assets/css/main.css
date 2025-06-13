@@ -3,7 +3,7 @@
 }
 
 ::selection {
-  background: #e5decf;
+  background: #E5DECF;
   color: #000;
 }
 
@@ -28,7 +28,7 @@ html {
 
 body {
   font: 1em / var(--lh) monospace;
-  background: #f6eee3;
+  background: #F6EEE3;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -97,7 +97,7 @@ h5::before {
 }
 
 .highlight {
-  background: #ddd;
+  background: #E5DECF;
   padding: 0 3px;
 }
 
@@ -123,16 +123,16 @@ footer p {
 }
 
 pre {
-  background: #e5e5e5;
-  border: 1px solid #d5d5d5;
+  background: #EEE7D7;
+  border: 1px solid #E5DECF;
   padding: calc(var(--lh) / 2);
   overflow: auto;
   border-radius: 3px;
 }
 
 pre ::selection {
-  background: #777;
-  color: #eee;
+  background: #E0C9A6;
+  color: #000;
 }
 
 .terms-list {
@@ -216,7 +216,7 @@ pre ::selection {
 
 /* Main menu navigation styles */
 .terminal-nav {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #E5DECF;
   margin-top: calc(var(--lh) * 2);
   padding-top: var(--lh);
 }
