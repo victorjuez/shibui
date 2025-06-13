@@ -35,6 +35,11 @@ Table of contents:
 - [Version Requirements](#version-requirements)
 - [Credits](#credits)
 
+|                                                                                                                            |                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://raw.githubusercontent.com/ntk148v/shibui/master/screenshots/1.png" alt="dark" style="border-radius:1%"/> | <img src="https://raw.githubusercontent.com/ntk148v/shibui/master/screenshots/2.png" alt="dark" style="border-radius:1%"/> |
+| <img src="https://raw.githubusercontent.com/ntk148v/shibui/master/screenshots/3.png" alt="dark" style="border-radius:1%"/> |                                                                                                                            |
+
 [Shibui](https://en.wikipedia.org/wiki/Shibui) (渋い) (adjective), shibumi (渋み) (subjective noun), or shibusa (渋さ) (objective noun) are Japanese words that refer to a particular aesthetic of simple, subtle, and unobtrusive beauty. Like other Japanese aesthetics terms, such as iki and wabi-sabi, shibui can apply to a wide variety of subjects, not just art or fashion.
 
 ## Features
