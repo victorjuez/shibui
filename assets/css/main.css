@@ -225,34 +225,43 @@ pre ::selection {
 }
 
 /* Main menu navigation styles */
-nav ul {
+.terminal-nav {
+  border-top: 1px solid #ddd;
+  margin-top: calc(var(--lh) * 2);
+  padding-top: var(--lh);
+}
+
+.terminal-nav nav ul {
   list-style: none;
   padding: 0;
-  margin: var(--lh) 0;
+  margin: 0;
+  display: flex;
+  gap: 1em;
 }
 
-nav ul li {
+.terminal-nav nav ul li {
   display: inline-block;
-  margin-right: 1em;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
+.terminal-nav nav ul li a,
+.terminal-nav .back-link {
   color: #888;
   border-bottom: none;
-}
-
-nav ul li a:hover {
-  color: #000;
   text-decoration: none;
 }
 
-nav ul li a.active {
+.terminal-nav nav ul li a:hover,
+.terminal-nav .back-link:hover {
+  color: #000;
+}
+
+.terminal-nav nav ul li a.active {
   color: #000;
   font-weight: bold;
+}
+
+.terminal-nav .back-nav {
+  margin: calc(var(--lh) * 0.5) 0;
 }
 
 @media (max-width: 600px) {

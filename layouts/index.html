@@ -1,4 +1,6 @@
 {{ define "main" }}
-  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   {{ .Content }}
+  <div class="terminal-nav">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
 {{ end }}
