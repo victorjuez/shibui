@@ -45,3 +45,7 @@ email = "kiennt2609@gmail.com"
   expiryDate = ['expiryDate']
   lastmod = [':git', 'lastmod', 'date', 'publishDate']
   publishDate = ['publishDate', 'date']
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
