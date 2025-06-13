@@ -198,6 +198,7 @@ git pull origin main
 
 This theme was inspired by various minimalist designs and the Japanese concept of Shibui (渋い). Special thanks to:
 
+- [William Jansson](https://williamjansson.com)
 - The Hugo community
 - [Minimalist design principles](https://en.wikipedia.org/wiki/Minimalism_(computing))
 - Japanese aesthetics, particularly [Shibui](https://en.wikipedia.org/wiki/Shibui)
