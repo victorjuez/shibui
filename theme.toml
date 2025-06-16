@@ -7,7 +7,8 @@ licenselink = "https://github.com/ntk148v/shibui/blob/main/LICENSE"
 description = "Shibui is a yet another minimalistic Hugo theme"
 homepage = "https://github.com/ntk148v/shibui"
 demosite = "https://ntk148v.github.io/shibui"
-tags = ["minimal"]
+tags = ["minimalist", "clean", "responsive", "blog", "simple"]
+features = ["responsive"]
 
 [author]
 name = "ntk148v"
