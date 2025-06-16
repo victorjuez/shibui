@@ -170,7 +170,7 @@ footer p {
   margin-bottom: 0;
 }
 
-pre {
+pre, code {
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   padding: var(--spacing-sm);
@@ -179,7 +179,7 @@ pre {
   word-wrap: break-word;
 }
 
-pre ::selection {
+pre, code ::selection {
   background: var(--color-selection-code-bg);
   color: var(--color-text-primary);
 }
