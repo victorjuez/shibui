@@ -1,12 +1,14 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-    <ul>
-        {{ range .Pages }}
-        <li>
-            <span>{{- partial "date" .Date -}}</span>
-            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        </li>
-        {{ end }}
-    </ul>
+    <div class="time-list">
+        <ul>
+            {{ range .Pages }}
+            <li>
+                <span>{{- partial "date" .Date -}}</span>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
 {{ end }}

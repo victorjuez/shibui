@@ -152,6 +152,7 @@ pre ::selection {
 
 .terms-list ul {
   list-style-type: none;
+  margin-left: 0;
 }
 
 .terms-list ul li {
@@ -223,6 +224,30 @@ pre ::selection {
 .back-link:hover {
   color: #000;
   text-decoration: none;
+}
+
+/* Time list */
+.time-list ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.time-list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .time-list li {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+
+  .time-list time {
+    font-size: 0.9em;
+  }
 }
 
 /* Main menu navigation styles */
