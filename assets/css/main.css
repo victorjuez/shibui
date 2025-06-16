@@ -170,7 +170,7 @@ footer p {
   margin-bottom: 0;
 }
 
-pre, code {
+pre {
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
   padding: var(--spacing-sm);
@@ -179,7 +179,20 @@ pre, code {
   word-wrap: break-word;
 }
 
-pre, code ::selection {
+pre ::selection {
+  background: var(--color-selection-code-bg);
+  color: var(--color-text-primary);
+}
+
+p > code {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+p > code ::selection {
   background: var(--color-selection-code-bg);
   color: var(--color-text-primary);
 }
