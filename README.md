@@ -47,6 +47,7 @@ Table of contents:
 - Minimalist design following Shibui (渋い) aesthetics
 - Terminal-inspired navigation
 - Clean typography with monospace font
+- Semantic HTML with proper text styling (bold, italic, blockquotes)
 - Warm, paper-like color scheme
 - Automatic dark/light theme support
 - Nested heading counters
@@ -122,8 +123,18 @@ You can customize the theme by overriding CSS variables in your `assets/css/cust
 
 ```css
 :root {
-  --lh: 1.5em;          /* Line height */
-  --font-mono: "Your Preferred Monospace Font";
+  /* Typography */
+  --spacing-base: 1.5em;          /* Base line height and spacing unit */
+  --font-family-mono: monospace;  /* Base monospace font */
+  --font-size-base: 1em;         /* Base font size */
+  --font-size-small: 0.9em;      /* Small text size */
+
+  /* Colors */
+  --color-bg-primary: #F6EEE3;   /* Main background color */
+  --color-bg-secondary: #EEE7D7; /* Secondary background for pre, blockquote */
+  --color-border: #E5DECF;       /* Borders and decorative elements */
+  --color-text-primary: #000;    /* Main text color */
+  --color-text-muted: #888;      /* Muted text color */
 }
 ```
 
