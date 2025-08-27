@@ -1,6 +1,17 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{/* Table of Contents: render only when the page has one */}}
+  {{ if .TableOfContents }}
+    <nav class="toc">
+      <h2>Table of contents</h2>
+      <div class="toc-content">
+        {{ .TableOfContents }}
+      </div>
+    </nav>
+  {{ end }}
+
   {{ .Content }}
   {{ partial "date.html" .Date}}
 
