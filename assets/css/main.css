@@ -421,25 +421,13 @@ blockquote > :last-child {
   border-radius: var(--border-radius);
 }
 
-.toc h2 {
-  margin: 0 0 var(--spacing-sm) 0;
-  font-weight: bold;
-  font-size: 0.95em;
-}
-
-.toc .toc-content ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 1em;
-}
-
 .toc .toc-content a {
   text-decoration: none;
   color: var(--color-text-primary);
 }
 
-.toc .toc-content a:hover {
-  text-decoration: underline;
+.toc .toc-content ol li {
+  list-style-type: disc !important;
 }
 
 @media (max-width: 600px) {
