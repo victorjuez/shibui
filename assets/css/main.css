@@ -221,6 +221,9 @@ h5 > code {
 
 .terms-list ul li {
   display: inline-block;
+  font-style: italic;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
 }
 
 /* Path navigation styles */
