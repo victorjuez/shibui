@@ -444,6 +444,7 @@ blockquote > :last-child {
 .toc .toc-content a {
   text-decoration: none;
   color: var(--color-text-primary);
+  font-size: var(--font-size-small)
 }
 
 .toc .toc-content ol li {
