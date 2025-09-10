@@ -48,7 +48,7 @@ Table of contents:
 - Terminal-inspired navigation
 - Clean typography with monospace font
 - Semantic HTML with proper text styling (bold, italic, blockquotes)
-- Warm, paper-like color scheme
+- Paper-like color scheme
 - Automatic dark/light theme support
 - Nested heading counters
 - Zero JavaScript (pure CSS solutions)
@@ -105,14 +105,17 @@ tags: ["hugo", "theme"]
 
 ## Color Scheme
 
-The theme uses a warm, paper-like color palette:
+The theme uses a paper-like color palette:
 
 ```css
---color-bg: #F6EEE3;      /* Light beige background */
---color-bg-alt: #EEE7D7;  /* Slightly darker beige */
---color-border: #E5DECF;  /* Subtle borders */
---color-text: #000000;    /* Clear black text */
---color-text-muted: #888; /* Subtle gray text */
+/* Colors */
+--color-bg-primary: hsl(0, 0%, 99%);
+--color-bg-secondary: hsl(0, 0%, 97.3%);
+--color-border: hsl(0, 0%, 93%);
+--color-text-primary: hsl(0, 0%, 9%);
+--color-text-muted: hsl(0, 0%, 43.5%);
+--color-text-code: hsl(0, 0%, 20%);
+--color-selection-bg: hsl(0, 0%, 85.8%);
 ```
 
 ## Customization
@@ -130,11 +133,13 @@ You can customize the theme by overriding CSS variables in your `assets/css/cust
   --font-size-small: 0.9em;      /* Small text size */
 
   /* Colors */
-  --color-bg-primary: #F6EEE3;   /* Main background color */
-  --color-bg-secondary: #EEE7D7; /* Secondary background for pre, blockquote */
-  --color-border: #E5DECF;       /* Borders and decorative elements */
-  --color-text-primary: #000;    /* Main text color */
-  --color-text-muted: #888;      /* Muted text color */
+  --color-bg-primary: hsl(0, 0%, 99%);
+  --color-bg-secondary: hsl(0, 0%, 97.3%);
+  --color-border: hsl(0, 0%, 93%);
+  --color-text-primary: hsl(0, 0%, 9%);
+  --color-text-muted: hsl(0, 0%, 43.5%);
+  --color-text-code: hsl(0, 0%, 20%);
+  --color-selection-bg: hsl(0, 0%, 85.8%);
 }
 ```
 

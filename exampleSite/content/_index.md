@@ -17,7 +17,7 @@ Shibui (渋い) is a yet another minimalistic Hugo theme
 - Terminal-inspired navigation
 - Clean typography with monospace font
 - Semantic HTML with proper text styling (bold, italic, blockquotes)
-- Warm, paper-like color scheme
+- Paper-like color scheme
 - Automatic dark/light theme support
 - Nested heading counters
 - Zero JavaScript (pure CSS solutions)
