@@ -56,6 +56,7 @@ Table of contents:
 - Mobile-responsive layout
 - Table of Contents support
 - Tags support
+- Customizable
 
 ## Installation
 
@@ -105,17 +106,35 @@ tags: ["hugo", "theme"]
 
 ## Color Scheme
 
-The theme uses a paper-like color palette:
+The theme uses a paper-like color palette, use a background primary color as base and then derive the rest of your theme colors by shifting lightness (or saturation/hue if needed) relative to that base, so you can easily generate multiple variants (light, dark, high-contrast, etc.). Therefore, you can adjust just base color and keep the same vibe, checkout [#3](https://github.com/ntk148v/shibui/pull/3) for preview.
 
 ```css
-/* Colors */
---color-bg-primary: hsl(0, 0%, 99%);
---color-bg-secondary: hsl(0, 0%, 97.3%);
---color-border: hsl(0, 0%, 93%);
---color-text-primary: hsl(0, 0%, 9%);
---color-text-muted: hsl(0, 0%, 43.5%);
---color-text-code: hsl(0, 0%, 20%);
---color-selection-bg: hsl(0, 0%, 85.8%);
+/* Base theme knobs */
+--bg-h: 0;
+--bg-s: 0%;
+--bg-l: 99%;
+
+/* Background colors */
+--color-bg-primary: hsl(var(--bg-h) var(--bg-s) var(--bg-l));
+--color-bg-secondary: hsl(var(--bg-h) var(--bg-s) calc(var(--bg-l) - 2%));
+--color-border: hsl(var(--bg-h) var(--bg-s) calc(var(--bg-l) - 6%));
+--color-selection-bg: hsl(var(--bg-h) var(--bg-s) calc(var(--bg-l) - 13%));
+
+/* Text colors with WCAG-friendly contrast */
+/* Primary: ensures near-black on light bg and near-white on dark bg */
+--color-text-primary: hsl(
+  var(--bg-h) var(--bg-s) clamp(8%, calc(100% - var(--bg-l)), 92%)
+);
+
+/* Muted: softer but still >4.5:1 contrast */
+--color-text-muted: hsl(
+  var(--bg-h) var(--bg-s) clamp(30%, calc(85% - var(--bg-l)), 75%)
+);
+
+/* Code text: slightly brighter than muted */
+--color-text-code: hsl(
+  var(--bg-h) var(--bg-s) clamp(20%, calc(90% - var(--bg-l)), 85%)
+);
 ```
 
 ## Customization
@@ -124,22 +143,14 @@ The theme uses a paper-like color palette:
 
 You can customize the theme by overriding CSS variables in your `assets/css/custom.css`:
 
+For example, you want to create a dark theme, just adjust the base color.
+
 ```css
 :root {
-  /* Typography */
-  --spacing-base: 1.5em;          /* Base line height and spacing unit */
-  --font-family-mono: monospace;  /* Base monospace font */
-  --font-size-base: 1em;         /* Base font size */
-  --font-size-small: 0.9em;      /* Small text size */
-
-  /* Colors */
-  --color-bg-primary: hsl(0, 0%, 99%);
-  --color-bg-secondary: hsl(0, 0%, 97.3%);
-  --color-border: hsl(0, 0%, 93%);
-  --color-text-primary: hsl(0, 0%, 9%);
-  --color-text-muted: hsl(0, 0%, 43.5%);
-  --color-text-code: hsl(0, 0%, 20%);
-  --color-selection-bg: hsl(0, 0%, 85.8%);
+  /* Base theme knobs */
+  --bg-h: 0;
+  --bg-s: 0%;
+  --bg-l: 12%;
 }
 ```
 
