@@ -106,7 +106,7 @@ tags: ["hugo", "theme"]
 
 ## Color Scheme
 
-The theme uses a paper-like color palette, use a background primary color as base and then derive the rest of theme colors by shifting lightness (or saturation/hue if needed) relative to that base, so we can easily generate multiple variants (light, dark, high-contrast, etc.). Therefore, you can adjust just base color and keep the same vibe, checkout [#3](https://github.com/ntk148v/shibui/pull/3) for preview.
+The theme uses a paper-like color palette, use a background primary color as base and then derive the rest of theme colors by shifting lightness (or saturation/hue if needed) relative to that base, so we can easily generate multiple variants (light, dark, high-contrast, etc.). Therefore, you can adjust just base color and keep the same vibe, checkout [#4](https://github.com/ntk148v/shibui/pull/4) for preview.
 
 ```css
 /* Base theme knobs */
